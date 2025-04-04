@@ -17,8 +17,8 @@ This project provides a complete pipeline for data preprocessing before its use 
 ```bash
 CleanData4ML/
 │
-├── data/ # Data directories
-│ ├── raw/ # Original raw datasets
+├── data/ # data directories
+│ ├── raw/ # raw datasets
 │ │ ├── churn-bigml-20.csv
 │ │ ├── churn-bigml-80.csv
 │ │ ├── house_prediction_dataset.csv
@@ -26,7 +26,7 @@ CleanData4ML/
 │ │ ├── sentiment_dataset.csv
 │ │ └── stock_prices_dataset.csv
 │ │
-│ └── processed/ # Processed datasets (train/test splits)
+│ └── processed/ # processed datasets (train/test splits)
 │ ├── churn_20/
 │ ├── churn_80/
 │ ├── housing/
@@ -34,15 +34,15 @@ CleanData4ML/
 │ ├── sentiment/
 │ └── stocks/
 │
-├── src/ # Source code
+├── src/ 
 │ ├── preprocessing/ # Data processing modules
-│ │ ├── clean_data.py # Missing value handling
-│ │ ├── load_data.py # Data loading utilities
-│ │ ├── split_data.py # Train/test splitting
-│ │ ├── transform.py # Feature transformations
+│ │ ├── clean_data.py # missing value handling
+│ │ ├── load_data.py # data loading utilities
+│ │ ├── split_data.py # train/test splitting
+│ │ ├── transform.py # feature transformations
 │ │ └── init.py
 │ │
-│ └── config.py # Dataset configurations
+│ └── config.py # dataset configurations
 │
 ├── main.py # Main execution script
 ├── README.md # This documentation
@@ -90,7 +90,6 @@ All dataset parameters are centrally configured in `src/config.py` including:
   - scikit-learn
 
 Install requirements:
-```bash
 pip install -r requirements.txt
 
 Usage

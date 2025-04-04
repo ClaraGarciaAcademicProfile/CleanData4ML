@@ -14,6 +14,7 @@ This project provides a complete pipeline for data preprocessing before its use 
 - Dataset-specific configuration management
 
 ## Project Structure
+```bash
 CleanData4ML/
 │
 ├── data/ # Data directories

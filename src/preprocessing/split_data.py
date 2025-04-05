@@ -2,11 +2,8 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 import os
 
+#Split and save data into train/test sets
 def split_and_save(df, config, dataset_name, test_size=0.2):
-
-    #Split and save data into train/test sets
-
-    # Check if target column exists
     target_col = config.get("target")
     
     if target_col and target_col in df.columns:

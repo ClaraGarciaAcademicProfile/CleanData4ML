@@ -46,7 +46,7 @@ CleanData4ML/
 │
 ├── main.py # Main execution script
 ├── README.md # This documentation
-├── LICENSE # MIT License
+├── LICENSE 
 └── .gitignore
 ````
 

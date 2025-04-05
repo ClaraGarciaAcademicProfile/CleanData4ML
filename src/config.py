@@ -1,5 +1,5 @@
 DATASETS = {  
-    # Dataset Iris
+    # Dataset Iris (For classification models)
     "iris": {
         "path": "data/raw/iris_dataset.csv",
         "has_header": True,
@@ -7,7 +7,7 @@ DATASETS = {
         "keep_as_string": ["species"],  
         "numerical_cols": ["sepal_length", "sepal_width", "petal_length", "petal_width"]
     },
-    # Dataset Sentiment
+    # Dataset Sentiment 
     "sentiment": {
         "path": "data/raw/sentiment_dataset.csv",
         "has_header": True,
@@ -17,7 +17,7 @@ DATASETS = {
         "numerical_cols": ["Retweets", "Likes"]
     },
     
-    # Dataset Housing
+    # Dataset Housing (For regression models)
     "housing": {
         "path": "data/raw/house_prediction_dataset.csv",
         "has_header": False,

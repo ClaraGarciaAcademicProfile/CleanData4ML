@@ -17,7 +17,7 @@ This project provides a complete pipeline for data preprocessing before its use 
 ```bash
 CleanData4ML/
 │
-├── data/ # data directories
+├── data/
 │ ├── raw/ # raw datasets
 │ │ ├── churn-bigml-20.csv
 │ │ ├── churn-bigml-80.csv
@@ -35,17 +35,17 @@ CleanData4ML/
 │ └── stocks/
 │
 ├── src/ 
-│ ├── preprocessing/ # Data processing modules
+│ ├── preprocessing/ 
 │ │ ├── clean_data.py # missing value handling
 │ │ ├── load_data.py # data loading utilities
 │ │ ├── split_data.py # train/test splitting
-│ │ ├── transform.py # feature transformations
+│ │ ├── transform.py # feature transformations (onehot encoding, etc)
 │ │ └── init.py
 │ │
-│ └── config.py # dataset configurations
+│ └── config.py 
 │
-├── main.py # Main execution script
-├── README.md # This documentation
+├── main.py # main execution script
+├── README.md 
 ├── LICENSE 
 └── .gitignore
 ````

@@ -1,4 +1,3 @@
-# transform.py
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 import pandas as pd
 

@@ -5,11 +5,9 @@ import pandas as pd
 def one_hot_encode(df, config):
     #one-Hot Encoding for specific columns
     if "onehot_cols" in config:
-        # filter columns that exist in the dataframe
         cols_to_encode = [col for col in config["onehot_cols"] if col in df.columns]
         
         for col in cols_to_encode:
-            # create dummies keeping original name as prefix
             dummies = pd.get_dummies(df[col], prefix=col, dtype=int)
             # remove original column and concatenate new ones
             df = df.drop(col, axis=1)
